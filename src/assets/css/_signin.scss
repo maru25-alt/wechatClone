@@ -1,0 +1,112 @@
+.account{
+    height: 90vh;
+}
+
+.landing__page{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    img{
+        object-fit: contain;
+        height: 90vh;
+        background-position: center;
+        position: relative;
+    }
+    .landing__pageContent{
+        position: absolute;
+        color: #fff;
+        top: 5%;
+        height: 80%;
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        .heading{
+            text-align: center;
+            width: 100%;
+
+            h6{
+                font-weight: 600;
+                margin-top: 0.5em ;
+                font-size: 1.3em;
+            }
+            img{
+                height: 50px;
+                object-fit: contain;
+               
+            }
+        }
+        .footer{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+
+.signin{
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    .card{
+        background-color: #fff;
+        width: 50%;
+        padding: 2em;
+
+        @media #{$mobile_device}{
+           width: 100%;
+}
+@media #{$tablet_device}{
+    width: 100%;
+}
+
+        .signin__header{
+            display: flex;
+            justify-content: space-around;
+            place-items: center;
+
+            h5{
+                font-size: x-large;
+
+                .v-icon{
+                    color: $wechat-green;
+                }
+            }
+
+            a{
+                color: $wechat-green;
+                text-decoration: underline $wechat-green;
+            }
+        }
+        .signin__google{
+            margin: 1em auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        form{
+            width: 80%;
+            margin: auto;
+            button{
+                color: #fff;
+                background-color: $wechat-green;
+            }
+        }
+        .signup__form{
+            .form-control{
+                margin-bottom: 0.5em;
+            }
+            p{
+                font-size: small;
+            }
+           
+             
+        }
+    }
+    
+}

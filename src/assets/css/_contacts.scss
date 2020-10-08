@@ -1,0 +1,29 @@
+
+.contactDetails{
+    padding: 0;
+    display: flex;
+   // width: 0vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em auto;
+   // border: grey 1px solid;
+   .contactDetails__header{
+       display: flex;
+       align-items: center;
+    img{
+        margin-left: 1em;
+        object-fit: contain;
+        width: 100px;
+    }
+   }
+   .contactDetails__body{
+       border-top: 2px solid $medium-gray;
+       padding: 1em;
+       tr{
+           padding: 2em ;
+       }
+   }
+
+   
+    
+}
